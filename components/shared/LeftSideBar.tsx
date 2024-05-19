@@ -1,12 +1,11 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { SignOutButton, SignedIn } from "@clerk/nextjs";
 import { sidebarLinks } from "@/constants";
 
 export default function LeftSideBar() {
-  const router = useRouter();
   const pathname = usePathname();
   return (
     <section className="custom-scrollbar leftsidebar">
@@ -34,7 +33,7 @@ export default function LeftSideBar() {
       </div>
       <div className="mt-10 px-6">
         <SignedIn>
-          <SignOutButton>
+          <SignOutButton redirectUrl={"/sign-in"}>
             <div className="flex cursor-pointer gap-4 p-4">
               <Image
                 src="/assets/logout.svg"
