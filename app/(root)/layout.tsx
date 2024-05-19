@@ -22,9 +22,9 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={`${inter.className} bg-dark-1`}>
+        <body className={inter.className}>
           <TopBar />
-          <main>
+          <main className="flex flex-row">
             <LeftSideBar />
             <section className="main-container">
               <div className="w-full max-w-4xl">{children}</div>
