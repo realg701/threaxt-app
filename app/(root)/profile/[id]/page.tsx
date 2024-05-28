@@ -1,12 +1,11 @@
 import { redirect } from "next/navigation";
-import { fetchUser } from "@/lib/actions/user.actions";
-import { currentUser } from "@clerk/nextjs/server";
-import ProfileHeader from "@/components/shared/ProfileHeader";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { profileTabs } from "@/constants";
 import Image from "next/image";
+import { currentUser } from "@clerk/nextjs/server";
+import { fetchUser } from "@/lib/actions/user.actions";
+import ProfileHeader from "@/components/shared/ProfileHeader";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import { profileTabs } from "@/constants";
 import ThreadsTab from "@/components/shared/ThreadsTab";
-import TabsContent from "@/components/shared/TabsContent";
 
 export default async function Page({ params }: { params: { id: string } }) {
   const user = await currentUser();
@@ -55,7 +54,7 @@ export default async function Page({ params }: { params: { id: string } }) {
                 currentUserId={user.id}
                 accountId={userInfo.id}
                 accountType="User"
-              ></ThreadsTab>
+              />
             </TabsContent>
           ))}
         </Tabs>
