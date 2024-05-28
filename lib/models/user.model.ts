@@ -1,5 +1,4 @@
 import mongoose from "mongoose"
-import { z } from "zod"
 
 const userSchema = new mongoose.Schema({
     id: { type: String, required: true },
@@ -8,7 +7,7 @@ const userSchema = new mongoose.Schema({
     image: String,
     bio: String,
     threads: [{ type: mongoose.Schema.Types.ObjectId, ref: "Thread" }],
-    onboarded: { type: z.boolean, default: false },
+    onboarded: { type: Boolean, default: false },
     communities: [{ type: mongoose.Schema.Types.ObjectId, ref: "Community" }],
 })
 
