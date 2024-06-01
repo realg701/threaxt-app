@@ -118,7 +118,7 @@ const ThreadCard = ({
       </div>
       {!isComment && community && (
         <Link
-          href={`/community/${community.id}`}
+          href={`/communities/${community.id}`}
           className="flex items-center mt-5"
         >
           <p className="text-subtle-medium text-gray-1">
