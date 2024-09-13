@@ -5,8 +5,8 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   experimental: {
-    serverActions: true,
-    serverComponentsExternalPackages: ["mongoose"],
+    // serverActions: true,
+    // serverComponentsExternalPackages: ["mongoose"],
   },
   eslint: {
     // Warning: This allows production builds to successfully complete even if
