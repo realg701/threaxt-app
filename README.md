@@ -2,6 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Live at [ThreaXt App](https://threaxt-app.vercel.app/)
 
+Responsive UI:
+![Screenshot 2024-09-14 023324](https://github.com/user-attachments/assets/d8ccc869-d02b-485f-b6da-4bdc0012d34a)
+
+![Screenshot 2024-09-14 023346](https://github.com/user-attachments/assets/78f0fc97-72e6-41db-a198-923143bdb4e1)
+
+![Screenshot 2024-09-14 023402](https://github.com/user-attachments/assets/9ca14960-5d59-4bea-a812-68ac054ebf14)
+
 ## Getting Started
 
 First, run the development server:
